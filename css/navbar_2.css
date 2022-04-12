@@ -1,0 +1,108 @@
+/*Header*/
+.navbar {
+    padding : 2vh 5% 0 5%;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+
+/*Logo*/
+.logo {
+    font-family: sans-serif;
+    font-style : italic;
+    font-weight : bold;
+}
+
+/*Navlinks*/
+.navlinks li, a, button {
+    color : #111;
+    text-decoration : none;
+    font-family: sans-serif;
+    font-style : italic;
+    font-weight : bold;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.navlinks li{
+    list-style-type: none;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+
+/*Contact*/
+.contact{
+    padding: 9px 25px;
+    background-color : #111;
+    color : #fff;
+    border : none;
+    border-radius : 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    font-style : none;
+    font-weight : none;
+}
+
+.contact:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+/*Menu Icon*/
+.menu-icon {
+    display : none;
+}
+
+@media (max-width:750px) {
+    .navbar {
+        height : none;
+        gap : 2em;
+        flex-direction : column;
+    }
+
+    .navlinks.responsive .contact:hover{
+        background-color: #fff;
+        color: #111;
+    }
+
+    .navlinks {
+        display : none;
+    }
+
+    .navlinks.responsive{
+        display: flex;
+        flex-direction: column;
+        width : 100%;
+    }
+
+    .navlinks.responsive li{
+        list-style-type: none;
+        height : 4em;
+        border-bottom: solid 0.2em;
+    }
+
+    .navlinks.responsive li a {
+        display : flex;
+        justify-content: center;
+    }
+
+    .navlinks.responsive li a:hover {
+        background-color: rgb(1, 1, 1);
+        padding: 9px 0;
+        border-radius : 50px;
+        color : #fff;
+    }
+    
+    .menu-icon {
+        display : flex;
+        width : 2em; height : 2em;
+    }
+}
