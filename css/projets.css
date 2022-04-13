@@ -68,12 +68,9 @@ main {
     display : flex;
     flex-direction : column;
     text-align: center;
-    width : 40%;
+    width : 100%;
 }
 
-.introduction:nth-child(1) {
-    border-bottom: 0.1em solid #111;
-}
 
 .title {
     font-size: calc(3vh + 3vw);
