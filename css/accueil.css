@@ -19,7 +19,7 @@ main {
 
 .dessin {
     width : 30vw;
-    margin : 0 1em;
+    margin : 4em 1em -2em 1em;
     display : flex;
     -webkit-animation: float-shadow 5.0s forwards;
     animation: float-shadow 5.0s forwards;
@@ -57,9 +57,6 @@ main {
         flex-direction : column;
     }
 
-    .dessin {
-        display :none;
-    }
     .introduction {
         margin : 15vh 0;
     }
