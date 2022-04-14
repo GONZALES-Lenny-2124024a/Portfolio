@@ -46,9 +46,6 @@
     border-radius : 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-
-    font-style : none;
-    font-weight : none;
 }
 
 .contact:hover{
@@ -63,7 +60,6 @@
 
 @media (max-width:750px) {
     .navbar {
-        height : none;
         gap : 2em;
         flex-direction : column;
     }

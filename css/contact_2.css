@@ -1,42 +1,7 @@
-* {
-    box-sizing : border-box;
-    margin : 0;
-    padding : 0;
-    font-size: 20px;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    color : #fff;
-}
-
-body {
-    background:
-        linear-gradient(217deg, rgb(255,255,255), rgba(255,0,0,0) 40%),
-        linear-gradient(35deg, rgb(255,255,255), rgba(255,0,0,0) 40%),
-        linear-gradient(127deg, rgb(59, 59, 255), rgba(0,255,0,0) 70.71%),
-        linear-gradient(336deg, #fa224d, rgba(0,0,255,0) 70.71%);
-    background-repeat: no-repeat;
-    height : auto;
-    overflow-y: auto;
-}
-
 /*---------------------*/
 
-.container {
-    box-shadow: 5px 5px 10px #111;
-    background-color: #fff;
-    height : auto;
-    min-height : 100vh;
-    margin : 2.5vh 1vw;
-    border-radius: 20px;    
-}
-
-
 main {
-    margin : 2em 0;
-    display : flex;
     flex-direction : row;
-    justify-content: center;
-    align-items: center;
-    height:91%;
     flex-wrap: wrap;
 }
 
@@ -60,44 +25,8 @@ main {
 /*---------------------*/
 
 .introduction {
-    margin : 15vh 0;
-    display : flex;
-    flex-direction : column;
-    text-align: center;
     width : 75%;
 }
-
-.title {
-    font-size: calc(3vh + 3vw);
-    line-height: 1.07143;
-    font-weight: 600;
-    letter-spacing: -.005em;
-    color : #111;
-    max-width: fit-content;
-
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .05em solid #111; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
-      typing 3s steps(50, end),
-      blink-caret 1s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    25% { width : 30%; }
-    50% { width : 10%; }
-    to { width: 100%; }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #111; }
-  }
-
 
 /*---------------------*/
 
@@ -111,10 +40,8 @@ main {
     flex-wrap: wrap;
 }
 
-.icons-img {
-    width : 5em;
-    -webkit-animation: float 5.0s forwards;
-    animation: float 5.0s ease-in-out infinite;
+.icons li {
+    list-style-type: none;
 }
 
 .icon-Twitter {
@@ -134,22 +61,7 @@ main {
     animation :none;
 }
 
-@keyframes float {
-    0% {
-      transform: translatey(0px);
-      border-radius:20px;
-    }
-    50% {
-      transform: translatey(-20px);
-      border-radius:20px;
-  
-    }
-    100% {
-      transform: translatey(0px);
-      border-radius:20px;
-  
-    }
-  }
+
 
 @media screen and (max-width: 750px) {
 
